@@ -459,9 +459,11 @@ body {
         background: rgba(249, 246, 229, 0.8);
         border-radius: 5px;
         visibility: hidden;
+        opacity: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: opacity 0.5s ease, visibility 0.3s ease;
     }
 
     .project_image .overlay img {
@@ -473,7 +475,7 @@ body {
     .project_content:hover, .project_content:active {
         .project_image .overlay {
             visibility: visible;
-            transition: opacity linear 0.2s;
+            opacity: 1;
         }
 
         .project_image .overlay a:first-child {
@@ -647,8 +649,8 @@ body {
         position: absolute;
         top: 50%;
         left: calc(50% - 14px);
-        opacity: 0;
-        transition: opacity 0.3s ease;
+        visibility: hidden;
+        transition: visibility 0.3s ease;
     }
 
     .news_image::before {
@@ -660,19 +662,19 @@ body {
         height: 100%;
         border: 10px solid var(--bg-color);
         box-sizing: border-box;
-        opacity: 0;
+        visibility: hidden;
         z-index: 1;
     }
 
     .news_image:hover::before, .news_image:active::before {
-        opacity: 1;
-        transition: opacity 0.3s;
+        visibility: visible;
+        transition: visibility 0.3s;
     }
 
     .news_blog:hover, .news_blog:active {
         .news_overlay {
-            opacity: 1;
-            transition: opacity 2s;
+            visibility: visible;
+            transition: visibility 2s;
             z-index: 1;
         }
 
