@@ -650,7 +650,8 @@ body {
         top: 50%;
         left: calc(50% - 14px);
         visibility: hidden;
-        transition: visibility 0.3s ease;
+        opacity: 0;
+        transition: visibility 0.2s ease, opacity 2s ease;
     }
 
     .news_image::before {
@@ -663,18 +664,20 @@ body {
         border: 10px solid var(--bg-color);
         box-sizing: border-box;
         visibility: hidden;
+        opacity: 0;
         z-index: 1;
+        transition: visibility 0.2s ease, opacity 0.5s ease;
     }
 
     .news_image:hover::before, .news_image:active::before {
         visibility: visible;
-        transition: visibility 0.3s;
+        opacity: 1;
     }
 
     .news_blog:hover, .news_blog:active {
         .news_overlay {
             visibility: visible;
-            transition: visibility 2s;
+            opacity: 1;
             z-index: 1;
         }
 
