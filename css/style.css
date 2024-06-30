@@ -178,11 +178,19 @@ body {
         background-color: #F9F6E5;
     }
 
+    .owl-carousel .owl-nav button.owl-next:hover {
+        background-color: #FFF3AF;
+    }
+
     .owl-carousel .owl-nav button.owl-prev {
         background-image: url("../images/icons/back.png");
         background-position: center;
         background-repeat: no-repeat;
         background-color: var(--bg-color);
+    }
+
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background-color: #274693;
     }
 
     .promo {
