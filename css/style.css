@@ -699,11 +699,13 @@ body {
             width: 100%;
             border-radius: unset;
             background-color: var(--bg-color);
-            transition: bottom 0.3s linear;
+            transition: bottom 0.5s;
+
         }
 
         .news_text p {
             color: rgba(249, 246, 229, 1);
+            transition: color 1s;
         }
     }
 
