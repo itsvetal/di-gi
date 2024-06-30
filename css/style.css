@@ -118,7 +118,7 @@ body {
         background: var(--bg-color);
     }
 
-    .read-more a:link, .read-more a:visited {
+    .read-more span {
         color: white;
         text-decoration: none;
         font-family: "Roboto", sans-serif;
@@ -223,27 +223,29 @@ body {
 
     .promo_button {
         margin-right: 9%;
-    }
-
-    .promo_button a:link, .promo_button a:visited {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #F9F6E5;
         color: var(--bg-color);
-        text-decoration: none;
         border-radius: 5px;
         margin-top: 71px;
         margin-bottom: 71px;
         height: 50px;
         width: 200px;
+
+    }
+
+    .promo_button span{
+        color: var(--bg-color);
+        text-decoration: none;
         font-family: "Roboto", "Times New Roman", sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 18px;
     }
 
-    .promo_button a:hover, .promo_button a:active {
+    .promo_button:hover, .promo_button:active {
         background-color: #FFF3AF;
     }
 
@@ -1112,7 +1114,7 @@ body {
         text-align: center;
     }
 
-    .container .promo_button a:link, .container .promo_button a:visited {
+    .container .promo_button {
         margin: 20px 0 40px 0;
     }
 
