@@ -26,6 +26,7 @@ body {
     .navigation {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background-color: var(--bg-color);
 
 
@@ -39,19 +40,13 @@ body {
 
         .navigation_button {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 9%;
-        }
-
-        .navigation_button button {
-            display: flex;
             align-items: center;
             justify-content: center;
             background-color: #ffffff;
             border-radius: 5px;
             width: 40px;
             height: 40px;
+            margin-right: 9%;
             cursor: pointer;
         }
 
