@@ -107,24 +107,27 @@ body {
         line-height: 26px;
     }
 
-    .read-more a:link, .read-more a:visited {
+    .read-more {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 5px;
-        color: white;
-        text-decoration: none;
-        margin: 28px 0 213px 0;
-        background: var(--bg-color);
         height: 50px;
         width: 200px;
+        border-radius: 5px;
+        margin: 28px 0 213px 0;
+        background: var(--bg-color);
+    }
+
+    .read-more a:link, .read-more a:visited {
+        color: white;
+        text-decoration: none;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 18px;
     }
 
-    .read-more a:hover, .read-more a:active {
+    .read-more:hover, .read-more:active {
         background-color: #274693;
         cursor: pointer;
     }
@@ -1081,7 +1084,7 @@ body {
         z-index: 2;
     }
 
-    .container .read-more a:link, .read-more a:visited {
+    .container .read-more {
         margin-bottom: 113px;
     }
 
